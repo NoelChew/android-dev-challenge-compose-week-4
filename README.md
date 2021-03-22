@@ -1,4 +1,4 @@
-# Android Dev Challenge Compose - Bloom App
+# Android Dev Challenge Compose - Compose (& Compare!) Weather App
 
 ![Workflow result](https://github.com/noelchew/android-dev-challenge-compose-week-4/workflows/Check/badge.svg)
 
