@@ -6,16 +6,17 @@
 ## :scroll: Description
 Compose (& Compare!) Weather App is a practice project to learn Jetpack Compose.
 The app uses OpenWeatherMap API through this library: [OpenWeatherMap-Android-Library](https://github.com/KwabenBerko/OpenWeatherMap-Android-Library)
-The focus of this project is on building the UI, instead of the app architecture such as data repository with caching.
+
+The focus of this project is on building the UI instead of the app architecture such as data repository with caching.
 
 ## :bulb: Motivation and Context
 I want to learn more about the new UI Toolkit Jetpack Compose.  
 This app serves as a learning platform as well as a chance to explore Jetpack Compose.
 
 ## :camera_flash: Screenshots
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_1_dark.png" width="260">
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
-<img src="/results/screenshot_2.png" width="260">&emsp;<img src="/results/screenshot_2_dark.png" width="260">
+<img src="/results/screenshot_1_dark.png" width="260">&emsp;<img src="/results/screenshot_2_dark.png" width="260">
 
 [Video](https://github.com/NoelChew/android-dev-challenge-compose-week-4/blob/main/results/video.mp4)
 

@@ -28,7 +28,7 @@ import com.kwabenaberko.openweathermaplib.model.currentweather.CurrentWeather
 import com.kwabenaberko.openweathermaplib.model.threehourforecast.ThreeHourForecast
 
 class MainViewModel : AndroidViewModel {
-    val helper = OpenWeatherMapHelper("1b035b39e3d589246b59d5c35c114028")
+    val helper = OpenWeatherMapHelper("your_api_key")
 
     constructor(application: Application) : super(application) {
         helper.setUnits("metric")
