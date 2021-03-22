@@ -258,38 +258,36 @@ fun MyApp(viewModel: MainViewModel) {
                         )
                     }
                 }
-                if (displayState == DisplayState.Single && viewModel.weatherA.name != null) {
-                    CircleButton(
-                        modifier = Modifier
-                            .padding(16.dp)
-                            .wrapContentWidth()
-                            .wrapContentHeight()
-                            .constrainAs(leftArrow) {
-                                start.linkTo(parent.start)
-                                top.linkTo(topPortion.top)
-                                bottom.linkTo(topPortion.bottom)
-                            },
-                        iconImageVector = Icons.Default.ChevronLeft,
-                        iconTint = MaterialTheme.colors.secondary,
-                        iconContentDescription = "Change City",
-                        onClick = { viewModel.changeCityA(true) },
-                    )
-                    CircleButton(
-                        modifier = Modifier
-                            .padding(16.dp)
-                            .wrapContentWidth()
-                            .wrapContentHeight()
-                            .constrainAs(rightArrow) {
-                                end.linkTo(parent.end)
-                                top.linkTo(topPortion.top)
-                                bottom.linkTo(topPortion.bottom)
-                            },
-                        iconImageVector = Icons.Default.ChevronRight,
-                        iconTint = MaterialTheme.colors.secondary,
-                        iconContentDescription = "Change City",
-                        onClick = { viewModel.changeCityA(false) },
-                    )
-                }
+                CircleButton(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .wrapContentWidth()
+                        .wrapContentHeight()
+                        .constrainAs(leftArrow) {
+                            end.linkTo(topPortion.start)
+                            top.linkTo(topPortion.top)
+                            bottom.linkTo(topPortion.bottom)
+                        },
+                    iconImageVector = Icons.Default.ChevronLeft,
+                    iconTint = MaterialTheme.colors.secondary,
+                    iconContentDescription = "Change City",
+                    onClick = { viewModel.changeCityA(true) },
+                )
+                CircleButton(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .wrapContentWidth()
+                        .wrapContentHeight()
+                        .constrainAs(rightArrow) {
+                            start.linkTo(topPortion.end)
+                            top.linkTo(topPortion.top)
+                            bottom.linkTo(topPortion.bottom)
+                        },
+                    iconImageVector = Icons.Default.ChevronRight,
+                    iconTint = MaterialTheme.colors.secondary,
+                    iconContentDescription = "Change City",
+                    onClick = { viewModel.changeCityA(false) },
+                )
             }
         }
     }
