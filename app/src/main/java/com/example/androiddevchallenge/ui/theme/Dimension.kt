@@ -15,17 +15,19 @@
  */
 package com.example.androiddevchallenge.ui.theme
 
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
-val richRazzleberry = Color(0xFFAA6C88)
-val bermudaBay = Color(0xFF79CFC7)
-val crushedCurry = Color(0xFFF7C955)
-val indigo = Color(0xFFB3A0FA)
+val arrowIconSize = 20.dp
 
-val richRazzleberry_dark = Color(0xFF7A3353)
-val bermudaBay_dark = Color(0xFF289289)
-val crushedCurry_dark = Color(0xFFBC983F)
-val indigo_dark = Color(0xFF5135BC)
+val cornerRadius = 8.dp
+val forecastTextSize = 12.sp
+val forecastSmallTextSize = 11.sp
 
-val cardBg = Color(0x33000000)
-val cardBg_dark = Color(0x77222222)
+val weatherInfoTemperatureTextSize = 48.sp
+
+val moreInfoSmallTextSize = 11.sp
+
+val comparisonBarTitleTextSize = 11.sp
+val comparisonBarValueTextSize = 14.sp
+val comparisonBarLabelIconSize = 28.dp

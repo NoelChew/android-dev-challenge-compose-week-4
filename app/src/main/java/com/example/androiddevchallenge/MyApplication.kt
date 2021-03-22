@@ -13,19 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge
 
-import androidx.compose.ui.graphics.Color
+import android.app.Application
+import com.joanzapata.iconify.Iconify
+import com.joanzapata.iconify.fonts.MaterialCommunityModule
 
-val richRazzleberry = Color(0xFFAA6C88)
-val bermudaBay = Color(0xFF79CFC7)
-val crushedCurry = Color(0xFFF7C955)
-val indigo = Color(0xFFB3A0FA)
+class MyApplication : Application() {
 
-val richRazzleberry_dark = Color(0xFF7A3353)
-val bermudaBay_dark = Color(0xFF289289)
-val crushedCurry_dark = Color(0xFFBC983F)
-val indigo_dark = Color(0xFF5135BC)
-
-val cardBg = Color(0x33000000)
-val cardBg_dark = Color(0x77222222)
+    override fun onCreate() {
+        super.onCreate()
+        Iconify.with(MaterialCommunityModule())
+    }
+}

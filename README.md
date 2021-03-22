@@ -1,27 +1,23 @@
-# Template repository
+# Android Dev Challenge Compose - Bloom App
 
-Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
+![Workflow result](https://github.com/noelchew/android-dev-challenge-compose-week-4/workflows/Check/badge.svg)
 
-## Getting started
-Copy this repository by pressing the "Use this template" button in Github.
-Clone your repository and open it in the latest [Android Studio (Canary build)](https://developer.android.com/studio/preview).
 
-## Submission requirements
-- Follow the challenge description on the project website: [developer.android.com/dev-challenge](https://developer.android.com/dev-challenge)
-- All UI should be written using Jetpack Compose
-- The Github Actions workflow should complete successfully
-- Include two screenshots of your submission in the [results](results) folder. The names should be
-  screenshot_1.png and screenshot_2.png.
-- Include a screen record of your submission in the [results](results) folder. The name should be
-  video.mp4
-- Replace the contents of [README.md](README.md) with the contents of [README-template.md](README-template.md) and fill out the template.
+## :scroll: Description
+Compose (& Compare!) Weather App is a practice project to learn Jetpack Compose.
+The app uses OpenWeatherMap API through this library: [OpenWeatherMap-Android-Library](https://github.com/KwabenBerko/OpenWeatherMap-Android-Library)
+The focus of this project is on building the UI, instead of the app architecture such as data repository with caching.
 
-## Code formatting
-The CI uses [Spotless](https://github.com/diffplug/spotless) to check if your code is formatted correctly and contains the right licenses.
-Internally, Spotless uses [ktlint](https://github.com/pinterest/ktlint) to check the formatting of your code.
-To set up ktlint correctly with Android Studio, follow one of the [listed setup options](https://github.com/pinterest/ktlint#-with-intellij-idea).
+## :bulb: Motivation and Context
+I want to learn more about the new UI Toolkit Jetpack Compose.  
+This app serves as a learning platform as well as a chance to explore Jetpack Compose.
 
-Before committing your code, run `./gradlew app:spotlessApply` to automatically format your code.
+## :camera_flash: Screenshots
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_1_dark.png" width="260">
+
+<img src="/results/screenshot_2.png" width="260">&emsp;<img src="/results/screenshot_2_dark.png" width="260">
+
+[Video](https://github.com/NoelChew/android-dev-challenge-compose-week-4/blob/main/results/video.mp4)
 
 ## License
 ```
