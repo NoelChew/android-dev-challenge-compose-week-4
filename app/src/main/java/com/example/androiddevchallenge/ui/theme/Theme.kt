@@ -23,21 +23,23 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
-    primary = richRazzleberry_dark,
-    primaryVariant = indigo_dark,
-    secondary = crushedCurry_dark,
-    secondaryVariant = bermudaBay_dark,
+    primary = crushedCurry_dark,
+    primaryVariant = crushedCurryVariant_dark,
+    secondary = richRazzleberry_dark,
+    secondaryVariant = richRazzleberryVariant_dark,
     background = cardBg_dark,
     onPrimary = Color.White,
     onSecondary = Color.White
 )
 
 private val LightColorPalette = lightColors(
-    primary = richRazzleberry,
-    primaryVariant = indigo,
-    secondary = crushedCurry,
-    secondaryVariant = bermudaBay,
-    background = cardBg
+    primary = crushedCurry,
+    primaryVariant = crushedCurryVariant,
+    secondary = richRazzleberry,
+    secondaryVariant = richRazzleberryVariant,
+    background = cardBg,
+    onPrimary = Color.Black,
+    onSecondary = Color.Black
 
     /* Other default colors to override
 background = Color.White,

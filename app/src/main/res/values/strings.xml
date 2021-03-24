@@ -10,4 +10,8 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="content_description_previous_city">Previous City</string>
+    <string name="content_description_next_city">Next City</string>
+    <string name="content_description_change_city">Change City</string>
+    <string name="content_description_toggle_comparison_city">Toggle Comparison City</string>
 </resources>

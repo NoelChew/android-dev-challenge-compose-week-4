@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright 2020 The Android Open Source Project
   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
   in compliance with the License. You may obtain a copy of the License at
@@ -10,23 +9,29 @@
   the License.
   -->
 <resources>
-<!--    <color name="purple_200">#FFBB86FC</color>-->
-<!--    <color name="purple_500">#FF6200EE</color>-->
-<!--    <color name="purple_700">#FF3700B3</color>-->
-<!--    <color name="teal_200">#FF03DAC5</color>-->
-<!--    <color name="teal_700">#FF018786</color>-->
+    <!--    <color name="purple_200">#FFBB86FC</color>-->
+    <!--    <color name="purple_500">#FF6200EE</color>-->
+    <!--    <color name="purple_700">#FF3700B3</color>-->
+    <!--    <color name="teal_200">#FF03DAC5</color>-->
+    <!--    <color name="teal_700">#FF018786</color>-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="richRazzleberry">#AA6C88</color>
+    <color name="richRazzleberry">#C5809F</color>
+    <color name="richRazzleberryVariant">#AA6C88</color>
     <color name="bermudaBay">#79CFC7</color>
-    <color name="crushedCurry">#FFF7C955</color>
+    <color name="bermudaBayVariant">#52948E</color>
+    <color name="crushedCurry">#FFD756</color>
+    <color name="crushedCurryVariant">#E6B000</color>
     <color name="green">#589b7d</color>
     <color name="indigo">#B3A0FA</color>
 
     <color name="richRazzleberry_dark">#FF7A3353</color>
-    <color name="bermudaBay_dark">#289289</color>
-    <color name="crushedCurry_dark">#BC983F</color>
+    <color name="richRazzleberryVariant_dark">#AF6A89</color>
+    <color name="bermudaBay_dark">#11867B</color>
+    <color name="bermudaBayVariant_dark">#0D5E56</color>
+    <color name="crushedCurry_dark">#E4A300</color>
+    <color name="crushedCurryVariant_dark">#E6B000</color>
     <color name="green_dark">#396752</color>
     <color name="indigo_dark">#5135BC</color>
 

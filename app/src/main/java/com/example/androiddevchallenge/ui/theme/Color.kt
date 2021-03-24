@@ -17,15 +17,24 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val richRazzleberry = Color(0xFFAA6C88)
+val richRazzleberry = Color(0xFFC5809F)
+val richRazzleberryVariant = Color(0xFFAA6C88)
 val bermudaBay = Color(0xFF79CFC7)
-val crushedCurry = Color(0xFFF7C955)
+val bermudaBayVariant = Color(0xFF52948E)
+val crushedCurry = Color(0xFFFFD756)
+val crushedCurryVariant = Color(0xFFE6B000)
 val indigo = Color(0xFFB3A0FA)
 
 val richRazzleberry_dark = Color(0xFF7A3353)
-val bermudaBay_dark = Color(0xFF289289)
-val crushedCurry_dark = Color(0xFFBC983F)
+val richRazzleberryVariant_dark = Color(0xFFAF6A89)
+val bermudaBay_dark = Color(0xFF11867B)
+val bermudaBayVariant_dark = Color(0xFF0D5E56)
+val crushedCurry_dark = Color(0xFFE4A300)
+val crushedCurryVariant_dark = Color(0xFFE6B000)
 val indigo_dark = Color(0xFF5135BC)
 
-val cardBg = Color(0x33000000)
-val cardBg_dark = Color(0x77222222)
+val translucentCardBg = Color(0xDDFFFFFF)
+val translucentCardBg_dark = Color(0x88000000)
+
+val cardBg = Color(0xFFFFFFFF)
+val cardBg_dark = Color(0xFF000000)

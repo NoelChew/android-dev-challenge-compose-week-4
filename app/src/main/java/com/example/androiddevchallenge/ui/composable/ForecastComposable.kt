@@ -22,13 +22,13 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.cornerRadius
 import com.example.androiddevchallenge.ui.theme.forecastSmallTextSize
@@ -43,7 +43,7 @@ fun ForecastInfo(
     threeHourForecast: ThreeHourForecast,
     numberOfItems: Int,
     timeDifferenceInSeconds: Long,
-    color: Color
+    cardColor: Color
 ) {
     Row(
         modifier = modifier,
@@ -57,7 +57,7 @@ fun ForecastInfo(
                     .wrapContentHeight()
                     .background(
                         shape = RoundedCornerShape(cornerRadius),
-                        color = MaterialTheme.colors.background
+                        color = cardColor
                     )
                     .padding(4.dp)
                     .semantics(mergeDescendants = true) {}
@@ -69,12 +69,14 @@ fun ForecastInfo(
                         Text(
                             text = Utils.getLocalTime(it.dt, timeDifferenceInSeconds),
                             fontSize = forecastTextSize,
-                            color = color
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
                         )
                         Text(
                             text = "${it.main.temp}°C",
                             fontSize = forecastTextSize,
-                            color = color
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
                         )
                     }
                     WeatherIcon(
@@ -82,14 +84,15 @@ fun ForecastInfo(
                             .fillMaxWidth()
                             .wrapContentHeight(),
                         it.weather[0],
-                        24f,
-                        color
+                        28f,
+                        color = Color.White,
                     )
                 }
                 Text(
                     text = "${it.weather[0].description.capitalizeFirstLetter()}",
                     fontSize = forecastSmallTextSize,
-                    color = color
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
                 )
             }
         }

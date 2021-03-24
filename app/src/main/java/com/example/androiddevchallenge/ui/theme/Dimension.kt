@@ -24,7 +24,7 @@ val cornerRadius = 8.dp
 val forecastTextSize = 12.sp
 val forecastSmallTextSize = 11.sp
 
-val weatherInfoTemperatureTextSize = 48.sp
+val weatherInfoTemperatureTextSize = 44.sp
 
 val moreInfoSmallTextSize = 11.sp
 

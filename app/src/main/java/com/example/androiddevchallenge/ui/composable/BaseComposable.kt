@@ -20,15 +20,15 @@ import android.view.Gravity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.Button
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
+import androidx.compose.material.IconButton
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -57,7 +57,10 @@ fun CardLabel(modifier: Modifier, shape: Shape, color: Color, text: String, icon
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center
             ) {
-                Text(text = text, modifier = Modifier.padding(4.dp))
+                Text(
+                    text = text,
+                    modifier = Modifier.padding(4.dp)
+                )
 
                 Icon(
                     modifier = Modifier
@@ -118,17 +121,19 @@ fun CircleButton(
     iconContentDescription: String,
     onClick: () -> Unit
 ) {
-    Button(
+    IconButton(
         modifier = modifier
-            .background(shape = CircleShape, color = MaterialTheme.colors.background)
+            .background(shape = CircleShape, color = Color.Transparent)
             .clip(shape = CircleShape),
-        onClick = onClick
+        onClick = onClick,
     ) {
         Icon(
-            modifier = Modifier.size(36.dp),
+            modifier = Modifier
+                .fillMaxSize(),
             imageVector = iconImageVector,
             tint = iconTint,
             contentDescription = iconContentDescription
         )
     }
+
 }
