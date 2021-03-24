@@ -130,8 +130,7 @@ fun ComparisonBar(
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentHeight()
-                .constrainAs(bottomRow)
-                {
+                .constrainAs(bottomRow) {
                     bottom.linkTo(parent.bottom)
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
